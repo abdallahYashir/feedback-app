@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'pages#home' # root path
+  get '*path' => redirect('/') # redirect to root if any other url is entered
 end
